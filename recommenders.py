@@ -6,7 +6,7 @@ import numpy as np
 import pandas
 
 
-class item_similarity_recommender_py():
+class ItemSimilarityRecommender:
     def __init__(self):
         """Initialization"""
         self.train_data = None #rep training data used to build the recommender system
