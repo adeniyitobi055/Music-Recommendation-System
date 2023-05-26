@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+Recommenders module
+"""
 import numpy as np
 import pandas
 
