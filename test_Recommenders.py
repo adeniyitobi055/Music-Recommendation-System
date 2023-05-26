@@ -29,7 +29,7 @@ class TestItemSimilarityRecommender(unittest.TestCase):
 
         """
         Perform assertions to check if the expected output
-        matches the expected output
+        matches the expected output.
         """
         self.assertEqual(user_items, expected_items)
 
@@ -68,7 +68,7 @@ class TestItemSimilarityRecommender(unittest.TestCase):
 
         """
         Perform assertion to check if the expected output
-        matches the actual output
+        matches the actual output.
         """
         self.assertListEqual(actual_items, expected_items,\
             "Retrieved items do not match the expected items")
@@ -85,7 +85,7 @@ class TestItemSimilarityRecommender(unittest.TestCase):
         
         """
         Perform assertions to check if the expected output
-        matches the actual output
+        matches the actual output.
         """
         self.assertEqual(cooccurrence_matrix.shape[0], len(user_songs),\
             "Number of rows in the cooccurrence matrix is incorrect")
@@ -108,7 +108,7 @@ class TestItemSimilarityRecommender(unittest.TestCase):
             cooccurrence_matrix, all_songs, user_songs)
         """
         Perform assertions to check the properties of the
-        recommendation dataframe
+        recommendation dataframe.
         """
         self.assertIsInstance(df_recommendations, pandas.DataFrame,\
             "Recommendations are not of type pandas.DataFramr")
