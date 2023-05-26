@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Recommenders module
+ItemSimilarityRcommenders module
 """
 import numpy as np
 import pandas
