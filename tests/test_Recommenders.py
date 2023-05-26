@@ -3,7 +3,7 @@
 test_Recommenders module
 """
 import unittest
-import recommender
+from recommender import recommenders
 import numpy as np
 import pandas
 
