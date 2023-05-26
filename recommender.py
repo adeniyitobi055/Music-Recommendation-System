@@ -6,7 +6,7 @@ import numpy as np
 import pandas
 
 
-class ItemSimilarityRecommender:
+class ItemSimilarityRecommender():
     def __init__(self):
         """Initialization"""
         self.train_data = None #rep training data used to build the recommender system
@@ -60,15 +60,15 @@ class ItemSimilarityRecommender:
 
         for i in range(0, len(all_songs)):
             songs_i_data = self.train_data[self.train_data\
-                    [self.item_id] == all_songs[i]]
-            users_i = set(song_i_data[self.user_id].unique())
+                [self.item_id] == all_songs[i]]
+            users_i = set(songs_i_data[self.user_id].unique())
 
             for j in range(0, len(user_songs)):
                 users_j = user_songs_users[j]
                 users_intersection = users_i.intersection(users_j)
 
                 if len(users_intersection) != 0:
-                    users_union = users_i.union(users.j)
+                    users_union = users_i.union(users_j)
                     cooccurence_matrix[j, i] =\
                             float(len(users_intersection)) / float(len(users_union))
                 else:
@@ -133,6 +133,6 @@ class ItemSimilarityRecommender:
 
         user = ""
         df_recommendations = self.generate_top_recommendations\
-                (user, coocurence_matrix, all_songs, user_songs)
+                (user, cooccurence_matrix, all_songs, user_songs)
 
         return df_recommendations
