@@ -3,6 +3,8 @@
 test_Recommenders module
 """
 import unittest
+from unittest import mock
+from unittest.mock import patch
 
 import numpy as np
 import pandas
@@ -142,6 +144,29 @@ class TestItemSimilarityRecommender(unittest.TestCase):
             "User ID is not set correctly")
         self.assertEqual(self.recommender.item_id, item_id,\
             "Item ID is not set correctly")
+    
+    @patch('builtins.print')
+    def test_get_similar_items(self, mock_print):
+        """
+        Test case for getting similar items from train_data
+        """
+        # Prepare test data
+        item_list = ['item_1', 'item_2', 'item_3']
+
+        # Mock the method calls with in get_similar_items
+        self.recommender.get_all_items_train_data = lambda: ['item_1', 'item_2',\
+                                                             'item_3', 'item_4']
+        self.recommender.construct_cooccurence_matrix = lambda user_songs, all_songs:\
+            [['similarity_1', 'similarity_2'], ['similarity_3', 'similarity_4']]
+        self.recommender.generate_top_recommendations = lambda user, cooccurence_matrix,\
+            all_songs, user_songs: 'recommendations'
+        
+        # Call the function to test
+        result = self.recommender.get_similar_items(item_list)
+
+        # Assertions
+        self.assertEqual(result, 'recommendations')
+        self.assertEqual(mock_print.call_args[0][0], "No. of unique songs in the training set: 4")
 
 
 if __name__ == '__main__':

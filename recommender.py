@@ -133,6 +133,23 @@ class ItemSimilarityRecommender():
 
         user = ""
         df_recommendations = self.generate_top_recommendations\
-                (user, cooccurence_matrix, all_songs, user_songs)
+            (user, cooccurence_matrix, all_songs, user_songs)
 
         return df_recommendations
+    
+    def get_similar_items(self, item_list):
+        """
+        Retrieve similar items based on a given list of items
+        """
+        user_songs = item_list
+
+        all_songs = self.get_all_items_train_data()
+        print("No. of unique songs in the training set: %d" % len(all_songs))
+
+        cooccurence_matrix = self.construct_cooccurence_matrix(user_songs, all_songs)
+
+        user = ""
+        df_recommendations = self.generate_top_recommendations(user, cooccurence_matrix,\
+                                                               all_songs, user_songs)
+        
+        return (df_recommendations)
