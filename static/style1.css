@@ -71,8 +71,8 @@
 }
 #searchbox input[type=submit]{
     width: 25%;
-    background:#eee;
-    color:black;
+    background:#9e9c9c;
+    color:rgb(252, 251, 251);
     float: right;
     border-left: 0px;
 }
