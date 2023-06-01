@@ -24,7 +24,7 @@ def model1(s1):
     len(song_df)
     song_df['song'] = song_df['title'] + ' - ' + song_df['artist_name']
     song_df.head()
-    song_df = song_df.head(20)
+    song_df = song_df.head(20000)
     song_grouped = song_df.groupby(['song']).agg({'listen_count':'count'}).reset_index()
     song_grouped.head()
     grouped_sum = song_grouped['listen_count'].sum()
