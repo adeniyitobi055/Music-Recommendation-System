@@ -54,14 +54,26 @@ def model1(s1):
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/landing')
+def landing_page():
+    # Return landing page to the user
+    
+    return (render_template('landing.html'))
+
+@app.route('/about')
+def about_page():
+    # Return about page to the user
+
+    return (render_template('about.html'))
+
+@app.route('/index')
 def index_page():
     """
     Returns index page to the user
     """
-    return render_template('index.html')
+    return (render_template('index.html'))
     
-@app.route('/', methods=['POST'])
+@app.route('/index', methods=['POST'])
 def search():
     """
     Allows user to search
@@ -71,7 +83,7 @@ def search():
     model1(s1)
     print(rec_song)
     
-    return render_template('recommend.html', data=rec_song)
+    return (render_template('recommend.html', data=rec_song))
 
 
 if __name__ == "__main__":
