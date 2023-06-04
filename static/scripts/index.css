@@ -7,18 +7,9 @@
 .banner {
     width: auto;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(p1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
     background-attachment: fixed;
     background-size: contain;
-    
-}
-
-p {
-    font-size: 17px;
-    color: #f5f1f1;
-    margin: 10px 0;
-    margin-left: 50px;
-    margin-top: 50px;
     
 }
 
@@ -63,13 +54,31 @@ p {
 .navbar ul li:hover::after{
     width: 100%;
 }
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-
+#searchbox{
+    padding-top: 100px;
+    font-family:sans-serif;
+    width:50%;
+    margin: auto;
+}
+#searchbox input{
+    width:75%;
+    border:2px solid rgb(184, 179, 179);
+    border-right: 0px;
+    font-size: 20px;
+    padding: 12px;
+    background: transparent;
+    color: rgb(49, 45, 45);
+}
+#searchbox input[type=submit]{
+    width: 25%;
+    background:#9e9c9c;
+    color:rgb(252, 251, 251);
+    float: right;
+    border-left: 0px;
+}
+#searchbox input[type=submit]:hover{
+    opacity:.8;
+}
 
 
 
@@ -112,3 +121,8 @@ h1{
   /* demo styles */
   
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  
+  
+  
+  
+ 

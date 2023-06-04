@@ -7,10 +7,20 @@
 .banner {
     width: auto;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(p1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
     background-attachment: fixed;
     background-size: contain;
     
+}
+
+.wrapper {
+    width: 900px;
+    padding: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: auto;
+    display: fixed;
+    justify-content: center;
 }
 
 p {
@@ -21,16 +31,14 @@ p {
     margin-top: 30px;
     line-height: 1.1;
     letter-spacing: 0.5px;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
 }
 
-.wrapper {
-    width: 900px;
-    padding: 10px;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow: auto;
+.links {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 30px;
 }
 
 .navbar {

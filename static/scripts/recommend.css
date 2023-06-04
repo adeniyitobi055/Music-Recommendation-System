@@ -5,9 +5,8 @@
 }
 
 .banner {
-    width: auto;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(p1.jpg);
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
     background-attachment: fixed;
     background-size: contain;
     
@@ -62,17 +61,17 @@
 }
 #searchbox input{
     width:75%;
-    border:2px solid rgb(184, 179, 179);
+    border:2px solid white;
     border-right: 0px;
     font-size: 20px;
     padding: 12px;
     background: transparent;
-    color: rgb(49, 45, 45);
+    color: white;
 }
 #searchbox input[type=submit]{
     width: 25%;
-    background:#9e9c9c;
-    color:rgb(252, 251, 251);
+    background:#eee;
+    color:black;
     float: right;
     border-left: 0px;
 }
@@ -121,8 +120,3 @@ h1{
   /* demo styles */
   
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-  
-  
-  
-  
- 
