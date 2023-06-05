@@ -77,7 +77,7 @@
     border-left: 0px;
 }
 #searchbox input[type=submit]:hover{
-    opacity:.8;
+    opacity: 0.9;
 }
 
 
