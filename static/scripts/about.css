@@ -6,7 +6,7 @@
 
 .banner {
     width: auto;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
     background-attachment: fixed;
     background-size: contain;
@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-p {
+.wrapper p {
     font-size: 20px;
     color: #f5f1f1;
     margin: 10px 0;
@@ -34,11 +34,79 @@ p {
     text-align: justify;
 }
 
-.links {
-    font-size: 15px;
-    color: #fff;
+.tobi {
+    font-size: 20px;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.tobi p {
+    color: #f5f1f1;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.jite {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.jite p {
+    color: #f5f1f1;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.kelvin {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.kelvin p {
+    color: #f5f1f1;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.portfolio {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.portfolio p {
+    color: #f5f1f1;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+a:link {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+a:visited {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+a:active {
+    color: gold;
+    text-decoration: underline;
 }
 
 .navbar {

@@ -6,21 +6,66 @@
 
 .banner {
     width: auto;
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
     background-attachment: fixed;
     background-size: contain;
     
 }
 
-p {
-    font-size: 17px;
+.wrapper {
+    width: 900px;
+    padding: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: auto;
+    display: fixed;
+    justify-content: center;   
+}
+
+.wrapper p {
+    font-size: 20px;
     color: #f5f1f1;
     margin: 10px 0;
-    margin-left: 50px;
-    margin-top: 50px;
-    
+    margin-left: 30px;
+    margin-top: 15px;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    text-align: justify;
 }
+
+.home-image {
+    width: 700px;
+    height: 345px;
+    background-image: url(/static/images/result/home.png);
+    background-size: 100%;
+    margin-left: 100px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    border: 2px solid #f5f1f1;
+}
+
+.result-image {
+    width: 700px;
+    height: 345px;
+    background-image: url(/static/images/result/result.png);
+    background-size: 100%;
+    margin-left: 100px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    border: 2px solid #f5f1f1;
+    border-bottom: 30px;
+}
+
+.wrapper h2 {
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
 
 .navbar {
     width: 85%;
