@@ -7,7 +7,7 @@
 .banner {
     width: auto;
     height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/p1.jpg?{{cache_id}});
     background-attachment: fixed;
     background-size: contain;
     
