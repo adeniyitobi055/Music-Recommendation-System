@@ -7,7 +7,7 @@
 .banner {
     width: auto;
     height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/static/images/p1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/p1.jpg?{{cache_id}});
     background-attachment: fixed;
     background-size: contain;
     
@@ -38,7 +38,7 @@
 .home-image {
     width: 700px;
     height: 345px;
-    background-image: url(/static/images/result/home.png);
+    background-image: url(../images/result/home.png?{{cache_id}});
     background-size: 100%;
     margin-left: 100px;
     margin-top: 30px;
@@ -49,7 +49,7 @@
 .result-image {
     width: 700px;
     height: 345px;
-    background-image: url(/static/images/result/result.png);
+    background-image: url(../images/result/result.png?{{cache_id}});
     background-size: 100%;
     margin-left: 100px;
     margin-top: 30px;
