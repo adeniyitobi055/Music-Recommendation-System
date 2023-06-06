@@ -14,13 +14,14 @@
 }
 
 .wrapper {
-    width: 900px;
+    width: 1100px;
     padding: 10px;
     word-wrap: break-word;
     white-space: normal;
     overflow: auto;
     display: fixed;
-    justify-content: center;   
+    justify-content: center;
+    margin-left: 30px;
 }
 
 .wrapper p {
@@ -40,7 +41,7 @@
     height: 345px;
     background-image: url(../images/result/home.png?{{cache_id}});
     background-size: 100%;
-    margin-left: 100px;
+    margin-left: 140px;
     margin-top: 30px;
     background-repeat: no-repeat;
     border: 2px solid #f5f1f1;
@@ -51,7 +52,7 @@
     height: 345px;
     background-image: url(../images/result/result.png?{{cache_id}});
     background-size: 100%;
-    margin-left: 100px;
+    margin-left: 140px;
     margin-top: 30px;
     background-repeat: no-repeat;
     border: 2px solid #f5f1f1;

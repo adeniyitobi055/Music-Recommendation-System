@@ -14,13 +14,14 @@
 }
 
 .wrapper {
-    width: 900px;
+    width: 1100px;
     padding: 10px;
     word-wrap: break-word;
     white-space: normal;
     overflow: auto;
     display: fixed;
     justify-content: center;
+    margin-left: 30px;
 }
 
 .wrapper p {
@@ -37,14 +38,20 @@
 .tobi {
     font-size: 20px;
     margin-left: 40px;
-    margin-top: 10px;
     line-height: 1.5;
+    margin-top: 10px;
 }
 
 .tobi p {
     color: #f5f1f1;
     font-size: 20px;
     line-height: 1.7;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.tobi a {
+    margin-left: 30px;
 }
 
 .jite {
@@ -58,7 +65,12 @@
     color: #f5f1f1;
     margin-top: 20px;
     font-size: 20px;
+    margin-left: 30px;
     line-height: 1.7;
+}
+
+.jite a {
+    margin-left: 30px;
 }
 
 .kelvin {
@@ -72,7 +84,12 @@
     color: #f5f1f1;
     margin-top: 20px;
     font-size: 20px;
+    margin-left: 30px;
     line-height: 1.7;
+}
+
+.kelvin a {
+    margin-left: 30px;
 }
 
 .portfolio {
@@ -86,7 +103,12 @@
     color: #f5f1f1;
     margin-top: 20px;
     font-size: 20px;
+    margin-left: 30px;
     line-height: 1.7;
+}
+
+.portfolio a {
+    margin-left: 30px;
 }
 
 a:link {
