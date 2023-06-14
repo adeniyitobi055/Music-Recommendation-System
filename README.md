@@ -19,5 +19,11 @@ The role of music recommendation systems is to alleviate the challenges users fa
 [Onajite Kobimowe](**)
 
 ## Usage
+In the search box input the song of your choice
+
+![home](https://github.com/adeniyitobi055/Music-Recommendation-System/assets/61655996/6f769e7f-f935-4d4e-a1d4-ed04986900ea)
 
 ## Result
+This is a result sample from Test
+
+![result](https://github.com/adeniyitobi055/Music-Recommendation-System/assets/61655996/6a482702-f733-48a8-9054-05183e9359fc)
