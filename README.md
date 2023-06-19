@@ -16,7 +16,7 @@ The role of music recommendation systems is to alleviate the challenges users fa
 
 [Kelvin Onumajuru](https://www.linkedin.com/in/kelvin-onumajuru-mnse-56410792)
 
-[Onajite Kobimowe](**)
+[Onajite Kobimowe](https://www.linkedin.com/in/jite-kobimowe-241005224)
 
 ## Usage
 
